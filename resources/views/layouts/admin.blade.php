@@ -4,15 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Tvornica talenata</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap core CSS -->
-    <link href="{{asset('mdb/css/bootstrap.min.css')}}" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="{{asset('mdb/css/mdb.min.css')}}" rel="stylesheet">
-    <!-- Your custom styles (optional) -->
-    <link href="{{asset('mdb/css/style.css')}}" rel="stylesheet">
+    <link href=”/mdb/css/bootstrap.css” rel=”stylesheet” type=”text/css”>
+    <link href=”/mdb/css/mdb.css” rel=”stylesheet” type=”text/css”>
+    <link href=”/mdb/css/style.css” rel=”stylesheet” type=”text/css”>
   </head>
   <body>
 
@@ -140,7 +139,7 @@
     <!--Main Layout-->
     <main>
         <div class="container-fluid mt-2">
-          
+
             @yield('content')
 
         </div>
@@ -148,12 +147,6 @@
     <!--Main Layout-->
     <!-- SCRIPTS -->
     <!-- JQuery -->
-    <script type="text/javascript" src="{{asset('mdb/js/jquery-3.2.1.min.js')}}"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="{{asset('mdb/js/popper.min.js')}}"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="{{asset('mdb/js/bootstrap.min.js')}}"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="{{asset('mdb/js/mdb.min.js')}}"></script>
+
   </body>
 </html>

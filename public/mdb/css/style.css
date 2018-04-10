@@ -1,1 +1,137 @@
-/* Your custom styles */
+/* YOUR CUSTOM STYLES */
+.bg-primary {
+  background-color: #0A002B !important;
+}
+
+.bg-secondary {
+  background-color: #20326A !important; }
+
+.bg-besplatno {
+  background-color: #00D5AA !important;
+}
+
+.bg-top {
+  background-color: #4A90E2 !important;
+}
+
+.light-green-text {
+  color: #00EBD3 !important;
+}
+/*--------hero area--------------------------------------------*/
+
+html,
+body,
+header,
+#intro {
+    height: 100%;
+}
+
+#intro {
+    background: url("../images/hero2x.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.badge-position {
+  position: absolute;
+  right:5px;
+  top:8px;
+  text-align: center;
+  border-radius: 30px 30px 30px 30px;
+  color:white;
+  padding:5px 10px;
+  font-size:12px;
+}
+
+.dropdown-content {
+  background-color: #20326A;
+}
+
+.dropdown-content li {
+  color: #fff;
+}
+
+
+#clanstvo {
+  background: url("../images/bg-clanstvo.png");
+}
+
+.p-tvornici {
+  /* TVORNICI: */
+font-family: Helvetica-Oblique;
+font-size: 36px;
+color: #00D3A7;
+letter-spacing: 2;
+text-shadow: 8px 10px 10px rgba(0,0,0,0.22);
+text-transform: uppercase;
+}
+
+.p-talenata {
+  /* TALENATA: */
+font-family: HelveticaNeue-BoldItalic;
+font-size: 36px;
+color: #4A90E2;
+letter-spacing: 2;
+text-shadow: 7px 6px 12px rgba(0,0,0,0.50);
+text-transform: uppercase;
+}
+
+/*--------Članstvo tablica--------------------------------------------*/
+.tb-head-title {
+  /* Članske značajke: */
+font-family: HelveticaNeue-CondensedBold;
+font-size: 25px;
+color: #FFFFFF;
+letter-spacing: 0;
+}
+
+.table td {
+  font-size: 22px;
+}
+
+
+.table-active,
+.table-active > th,
+.table-active > td {
+  background-color: rgba(3, 128, 119, 1);
+}
+
+.table-info,
+.table-info > th,
+.table-info > td {
+  background-color: #305799;
+}
+
+.tb-width {
+  width: 172px;
+}
+
+.profile-photo img {
+  border: 4px solid #4A90E2;
+}
+
+.profile-photo {
+    position: absolute;
+    left: 145px;
+    top: 140px;
+    padding: 0.625em;
+}
+
+.profile-info, .profile-data {
+  padding-left: 480px;
+}
+
+.form-elegant .font-small {
+  font-size: 0.8rem; }
+
+.form-elegant .z-depth-1a {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25);
+  box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25); }
+
+.form-elegant .z-depth-1-half,
+.form-elegant .btn:hover {
+  -webkit-box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15);
+  box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15); }

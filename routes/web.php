@@ -19,6 +19,11 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/users/logout', 'Auth\LoginController@userLogout')->name('user.logout');
+Route::get('/talenti', 'TalentiController@index')->name('talenti');
+Route::get('/clanstvo', 'ClanstvoController@index')->name('clanstvo');
+Route::get('/novosti', 'NovostiController@index')->name('novosti');
+Route::get('/audicije-i-poslovi', 'PosloviController@index')->name('audicije-i-poslovi');
+
 
 Route::prefix('admin')->group(function() {
   Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
