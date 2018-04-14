@@ -10,7 +10,7 @@
             <div class="col-md-10 text-center">
 
                 <!-- Heading -->
-                <h2 class="display-3 font-bold white-text mb-2">Tvornica Talenataaaaa</h2>
+                <h2 class="display-3 font-bold white-text mb-2">Tvornica Talenataaa</h2>
 
                 <!-- Divider -->
                 <hr class="hr-light">
