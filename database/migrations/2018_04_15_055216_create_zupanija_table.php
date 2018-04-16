@@ -19,7 +19,7 @@ class CreateZupanijaTable extends Migration
             $table->string('name');
             $table->timestamps();
 
-            $table->foreign('drzava_id')->references('id')->on('drzava')->onDelete('cascade');
+            $table->foreign('drzava_id')->references('id')->on('drzava');
 
         });
     }
