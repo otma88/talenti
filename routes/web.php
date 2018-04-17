@@ -23,6 +23,7 @@ Route::get('/talenti', 'TalentiController@index')->name('talenti');
 Route::get('/clanstvo', 'ClanstvoController@index')->name('clanstvo');
 Route::get('/novosti', 'NovostiController@index')->name('novosti');
 Route::get('/audicije-i-poslovi', 'PosloviController@index')->name('audicije-i-poslovi');
+Route::resource('/talenti/talent', 'TalentController');
 
 
 Route::prefix('admin')->group(function() {
