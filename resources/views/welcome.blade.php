@@ -37,7 +37,7 @@
 
   <div class="divider-new my-0">
     <!--Section heading-->
-    <h2 class="section-heading pt-4">Što je portal Tvornica Talenataaaa?</h2>
+    <h2 class="section-heading pt-4">Što je portal Tvornica Talenata?</h2>
   </div>
     <!--Section description-->
     <p class="section-description lead grey-text">Portal Tvornica-talenata zamišljena je kao stranica za promociju i podršku talentima iz različitih područja društvenih i tehničkih zanimanja.</p>

@@ -25,10 +25,10 @@
         <div class="col-md-6">
 
 
-          <h1 class="text-white">Mario Otmačić</h1>
+          <h1 class="text-white">{{$talent->name}} {{$talent->surname}}</h1>
 
           <p class="text-white">Sport</p>
-          <p class="text-white"><i class="fa fa-location-arrow mr-2"></i>Samobor</p>
+          <p class="text-white"><i class="fa fa-location-arrow mr-2"></i>{{$talent->grad->name}}</p>
         </div>
         <div class="col-md-6">
           <p class="text-white mb-1"><i class="fa fa-facebook-official fa-2x mr-2" aria-hidden="true"></i>www.facebook.hr</p>
