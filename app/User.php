@@ -43,4 +43,7 @@ class User extends Authenticatable
       return $this->belongsTo('App\Zupanija');
     }
 
+    public function kategorije(){
+      return $this->belongsToMany('App\Kategorije');
+    }
 }
