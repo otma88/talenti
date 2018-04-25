@@ -174,270 +174,50 @@
     <!--Grid column-->
     <div class="col-md-12 mb-2">
 
+      <div class="row">
+        <div class="col-md-3">
+
         <!--Card group-->
         <div class="card-group">
 
+          @foreach($talenti as $talent)
             <!--Card-->
             <div class="card card-personal mr-1">
+              <a href="{{route('talent', $talent->slug)}}">
 
                 <!--Card image-->
                 <div class="view overlay hm-white-slight hm-zoom">
                     <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(26).jpg" alt="Card image cap">
-                    <a href="#!">
+
                         <span class="badge-position badge badge-pill light-blue">TOP</span>
                         <div class="mask"></div>
-                    </a>
+
                 </div>
                 <!--Card image-->
 
                 <!--Card content-->
                 <div class="card-body bg-secondary">
                     <!--Title-->
-                    <a><h4 class="card-title text-white">Ana Horvat</h4></a>
-                    <a class="card-meta text-white">Modeling</a>
+                    <h4 class="card-title text-white">{{$talent->name}} {{$talent->surname}}</h4>
+                    <p class="card-meta text-white mb-0">Sport</p>
                 </div>
                 <!--Card content-->
-
-            </div>
-            <!--Card-->
-
-            <!--Card-->
-            <div class="card card-personal mr-1">
-
-                <!--Card image-->
-                <div class="view overlay hm-white-slight hm-zoom">
-                    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" alt="Card image cap">
-                    <a href="#!">
-                      <span class="badge-position badge badge-pill light-blue">TOP</span>
-                        <div class="mask"></div>
-                    </a>
-                </div>
-                <!--Card image-->
-
-                <!--Card content-->
-                <div class="card-body bg-secondary">
-                    <!--Title-->
-                    <a><h4 class="card-title text-white">Marko Petrović</h4></a>
-                    <a class="card-meta text-white">Sport</a>
-                </div>
-                <!--Card content-->
-
-            </div>
-            <!--Card-->
-
-            <!--Card-->
-            <div class="card card-personal mr-1">
-
-                <!--Card image-->
-                <div class="view overlay hm-white-slight hm-zoom">
-                    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(28).jpg" alt="Card image cap">
-                    <a href="#!">
-                      <span class="badge-position badge badge-pill light-blue">TOP</span>
-                        <div class="mask"></div>
-                    </a>
-                </div>
-                <!--Card image-->
-
-                <!--Card content-->
-                <div class="card-body bg-secondary">
-                    <!--Title-->
-                    <a><h4 class="card-title text-white">Sara Belančić</h4></a>
-                    <a class="card-meta text-white">Ljepota</a>
-                </div>
-                <!--Card content-->
-
+              </a>
             </div>
             <!--Card-->
 
 
-            <!--Card-->
-            <div class="card card-personal mr-1">
 
-                <!--Card image-->
-                <div class="view overlay hm-white-slight hm-zoom">
-                    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(26).jpg" alt="Card image cap">
-                    <a href="#!">
-                      <span class="badge-position badge badge-pill light-blue">TOP</span>
-                        <div class="mask"></div>
-                    </a>
-                </div>
-                <!--Card image-->
-
-                <!--Card content-->
-                <div class="card-body bg-secondary">
-                    <!--Title-->
-                    <a><h4 class="card-title text-white">Ivana Stepančić</h4></a>
-                    <a class="card-meta text-white">Gastro</a>
-                </div>
-                <!--Card content-->
-
-            </div>
-            <!--Card-->
-
-            <!--Card-->
-            <div class="card card-personal">
-
-                <!--Card image-->
-                <div class="view overlay hm-white-slight hm-zoom">
-                    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(26).jpg" alt="Card image cap">
-                    <a href="#!">
-                      <span class="badge-position badge badge-pill light-blue">TOP</span>
-                        <div class="mask"></div>
-                    </a>
-                </div>
-                <!--Card image-->
-
-                <!--Card content-->
-                <div class="card-body bg-secondary">
-                    <!--Title-->
-                    <a><h4 class="card-title text-white">Mila Modrić</h4></a>
-                    <a class="card-meta text-white">Neobični talenti</a>
-                </div>
-                <!--Card content-->
-
-            </div>
-            <!--Card-->
+            @endforeach
 
         </div>
         <!--Card group-->
+      </div>
+
+    </div>
 
     </div>
     <!--Grid column-->
-
-
-    <!--Grid column-->
-    <div class="col-md-12">
-
-        <!--Card group-->
-        <div class="card-group">
-
-            <!--Card-->
-            <div class="card card-personal mb-r mr-1">
-
-                <!--Card image-->
-                <div class="view overlay hm-white-slight hm-zoom">
-                    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(26).jpg" alt="Card image cap">
-                    <a href="#!">
-                      <span class="badge-position badge badge-pill light-blue">TOP</span>
-                        <div class="mask"></div>
-                    </a>
-                </div>
-                <!--Card image-->
-
-                <!--Card content-->
-                <div class="card-body bg-secondary">
-                    <!--Title-->
-                    <a><h4 class="card-title text-white">Ana Horvat</h4></a>
-                    <a class="card-meta text-white">Modeling</a>
-                </div>
-                <!--Card content-->
-
-            </div>
-            <!--Card-->
-
-            <!--Card-->
-            <div class="card card-personal mb-r mr-1">
-
-                <!--Card image-->
-                <div class="view overlay hm-white-slight hm-zoom">
-                    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" alt="Card image cap">
-                    <a href="#!">
-                      <span class="badge-position badge badge-pill light-blue">TOP</span>
-                        <div class="mask"></div>
-                    </a>
-                </div>
-                <!--Card image-->
-
-                <!--Card content-->
-                <div class="card-body bg-secondary">
-                    <!--Title-->
-                    <a><h4 class="card-title text-white">Marko Petrović</h4></a>
-                    <a class="card-meta text-white">Sport</a>
-                </div>
-                <!--Card content-->
-
-            </div>
-            <!--Card-->
-
-            <!--Card-->
-            <div class="card card-personal mb-r mr-1">
-
-                <!--Card image-->
-                <div class="view overlay hm-white-slight hm-zoom">
-                    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(28).jpg" alt="Card image cap">
-                    <a href="#!">
-                      <span class="badge-position badge badge-pill light-blue">TOP</span>
-                        <div class="mask"></div>
-                    </a>
-                </div>
-                <!--Card image-->
-
-                <!--Card content-->
-                <div class="card-body bg-secondary">
-                    <!--Title-->
-                    <a><h4 class="card-title text-white">Sara Belančić</h4></a>
-                    <a class="card-meta text-white">Ljepota</a>
-                </div>
-                <!--Card content-->
-
-            </div>
-            <!--Card-->
-
-
-            <!--Card-->
-            <div class="card card-personal mb-r mr-1">
-
-                <!--Card image-->
-                <div class="view overlay hm-white-slight hm-zoom">
-                    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(26).jpg" alt="Card image cap">
-                    <a href="#!">
-                      <span class="badge-position badge badge-pill light-blue">TOP</span>
-                        <div class="mask"></div>
-                    </a>
-                </div>
-                <!--Card image-->
-
-                <!--Card content-->
-                <div class="card-body bg-secondary">
-                    <!--Title-->
-                    <a><h4 class="card-title text-white">Ivana Stepančić</h4></a>
-                    <a class="card-meta text-white">Gastro</a>
-                </div>
-                <!--Card content-->
-
-            </div>
-            <!--Card-->
-
-            <!--Card-->
-            <div class="card card-personal mb-r">
-
-                <!--Card image-->
-                <div class="view overlay hm-white-slight hm-zoom">
-                    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(26).jpg" alt="Card image cap">
-                    <a href="#!">
-                      <span class="badge-position badge badge-pill light-blue">TOP</span>
-                        <div class="mask"></div>
-                    </a>
-                </div>
-                <!--Card image-->
-
-                <!--Card content-->
-                <div class="card-body bg-secondary">
-                    <!--Title-->
-                    <a><h4 class="card-title text-white">Mila Modrić</h4></a>
-                    <a class="card-meta text-white">Neobični talenti</a>
-                </div>
-                <!--Card content-->
-
-            </div>
-            <!--Card-->
-
-        </div>
-        <!--Card group-->
-
-    </div>
-    <!--Grid column-->
-
 
 </div>
 

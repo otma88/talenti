@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
-
+use App\Kategorije;
 
 class TalentiController extends Controller
 {
@@ -15,7 +15,9 @@ class TalentiController extends Controller
      */
     public function index()
     {
-        return view('talenti');
+        $talenti = User::all();
+
+        return view('talenti', compact('talenti'));
     }
 
     /**
@@ -45,11 +47,15 @@ class TalentiController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($slug)
     {
-        $talent = User::findOrFail($id);
+        $talent = User::findBySlugOrFail($slug);
 
-        return view('talent', compact('talent'));
+        $kategorije = $talent->kategorije()->where('parent_id','=',0)->get();
+
+        $podkategorije = $talent->kategorije()->where('parent_id','!=',0)->get();
+
+        return view('talent', compact('talent','kategorije','podkategorije'));
 
     }
 
