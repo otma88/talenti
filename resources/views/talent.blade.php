@@ -15,7 +15,7 @@
 <section id="talent-hedader" class="py-3 bg-primary">
   <div class="container">
     <div class="profile-photo">
-      <img src="{{$user->photo ? $user->photo->path : 'http://placehold.it/400x400'}}" alt="" height="382" width="302">
+      <img src="{{$talent->photo ? $talent->photo->path : 'http://placehold.it/400x400'}}" alt="" height="382" width="302">
     </div>
   </div>
 
@@ -99,6 +99,32 @@
       </div>
     </div>
 </section>
+
+
+<!-- IMAGE GALLERY -->
+<section class="py-5 bg-primary">
+  <div class="container">
+    <h2 class="text-white">Galerija slika</h2>
+    <div class="row">
+      <div class="col-md-12">
+
+          <div id="mdb-lightbox-ui"></div>
+
+          <div class="mdb-lightbox">
+            @foreach($images as $image)
+              <figure class="col-md-4">
+                  <a href="{{ $image->path }}" data-size="1600x1067">
+                      <img alt="picture" src="{{ $image->path }}" class="img-fluid">
+                  </a>
+              </figure>
+            @endforeach
+          </div>
+
+      </div>
+    </div>
+</div>
+</section>
+<!-- KRAJ IMAGE GALLERY -->
 
 
 

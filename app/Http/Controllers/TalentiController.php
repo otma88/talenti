@@ -55,7 +55,9 @@ class TalentiController extends Controller
 
         $podkategorije = $talent->kategorije()->where('parent_id','!=',0)->get();
 
-        return view('talent', compact('talent','kategorije','podkategorije'));
+        $images = $talent->img_gallery()->get();
+
+        return view('talent', compact('talent','kategorije','podkategorije','images'));
 
     }
 
