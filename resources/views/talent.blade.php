@@ -102,7 +102,7 @@
 
 
 <!-- IMAGE GALLERY -->
-<section class="py-5 bg-primary">
+<section class="py-3 bg-primary">
   <div class="container">
     <h2 class="text-white">Galerija slika</h2>
     <div class="row">
@@ -125,6 +125,21 @@
 </div>
 </section>
 <!-- KRAJ IMAGE GALLERY -->
+
+<!-- VIDEO GALLERY-->
+<section class="py-3 bg-primary">
+  <div class="container">
+    <h2 class="text-white mb-4">Video galerija</h2>
+      <div class="row mb-3">
+        @foreach($videos as $video)
+        <div class="col-md-6">
+          <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="{{ $video->path }}" allowfullscreen></iframe>
+          </div>
+        </div>
+        @endforeach
+  </div>
+</section>
 
 
 

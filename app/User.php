@@ -75,4 +75,8 @@ class User extends Authenticatable
     public function img_gallery(){
       return $this->hasMany('App\ImgGallery');
     }
+
+    public function vid_gallery(){
+      return $this->hasMany('App\VidGallery');
+    }
 }
