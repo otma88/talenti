@@ -53,13 +53,15 @@ class TalentiController extends Controller
 
         $kategorije = $talent->kategorije()->where('parent_id','=',0)->get();
 
-        $podkategorije = $talent->kategorije()->where('parent_id','!=',0)->get();
+        $podkategorije = $talent->kategorije()->where('parent_id','!=',0)->orderBy("id")->get();
 
         $images = $talent->img_gallery()->get();
 
         $videos = $talent->vid_gallery()->get();
 
-        return view('talent', compact('talent','kategorije','podkategorije','images','videos'));
+        $kat_sport = $talent->kat_sport()->get();
+
+        return view('talent', compact('talent','kategorije','podkategorije','images','videos','kat_sport'));
 
     }
 

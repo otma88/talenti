@@ -65,38 +65,42 @@
       <!-- Nav tabs -->
       <ul class="nav nav-tabs nav-justified bg-top">
           <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#panel1" role="tab">O meni</a>
+              <a class="nav-link active" data-toggle="tab" href="#panel0" role="tab">O meni</a>
           </li>
 
           @foreach($podkategorije as $podkategorija)
 
           <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#panel2" role="tab">{{ $podkategorija->name }}</a>
+              <a class="nav-link" data-toggle="tab" href="#panel{{ $loop->iteration }}" role="tab">{{ $podkategorija->name }}</a>
           </li>
-
           @endforeach
-
       </ul>
       <!-- Tab panels -->
       <div class="tab-content card bg-top">
           <!--Panel 1-->
-          <div class="tab-pane fade in show active" id="panel1" role="tabpanel">
+          <div class="tab-pane fade in show active" id="panel0" role="tabpanel">
               <br>
               <p class="text-white">{{ $talent->o_meni }}</p>
           </div>
           <!--/.Panel 1-->
+        @foreach($podkategorije as $podkategorija)
           <!--Panel 2-->
-          <div class="tab-pane fade" id="panel2" role="tabpanel">
+          <div class="tab-pane fade" id="panel{{ $loop->iteration }}" role="tabpanel">
               <br>
-              <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
-                  reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
-                  porro voluptate odit minima.</p>
-              <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
-                  reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
-                  porro voluptate odit minima.</p>
+              <p class="text-white">PANEL {{$podkategorija->name}}</p>
+               @if ($podkategorija->id == 11)
+                @foreach($kat_sport as $sport_item)
+                  <p class="text-white">{{ $sport_item->iskustvo }}</p>
+                  <p class="text-white">Pozicija</p>
+                  <p class="text-white">{{ dd($sport_item->poz_nog_id) }}</p>
+                @endforeach
+               @endif
           </div>
           <!--/.Panel 2-->
+        @endforeach
+
       </div>
+
     </div>
 </section>
 
