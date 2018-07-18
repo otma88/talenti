@@ -1,7 +1,60 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+
+<div class="container py-5">
+  <div class="card card-cascade">
+              <!-- Card image -->
+              <div class="view gradient-card-header blue-gradient mb-5">
+                <!-- Title -->
+                <h2 class="card-header-title mb-3">Registracija</h2>
+                <!-- Subtitle -->
+                <p class="card-header-subtitle mb-0">Ispunite formu za registraciju</p>
+
+              </div>
+
+            <!-- Stepper -->
+              <div class="steps-form-2 px-3">
+                  <div class="steps-row-2 setup-panel-2 d-flex justify-content-between">
+                      <div class="steps-step-2">
+                          <a href="#step-1" type="button" class="btn btn-amber btn-circle-2 waves-effect ml-0" data-toggle="tooltip" data-placement="top" title="Osnovne informacije"><i class="fa fa-folder-open-o" aria-hidden="true"></i></a>
+                      </div>
+                      <div class="steps-step-2">
+                          <a href="#step-2" type="button" class="btn btn-blue-grey btn-circle-2 waves-effect" data-toggle="tooltip" data-placement="top" title="Informacije o talentu"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                      </div>
+                      <div class="steps-step-2">
+                          <a href="#step-3" type="button" class="btn btn-blue-grey btn-circle-2 waves-effect" data-toggle="tooltip" data-placement="top" title="Upload fotografija i videa"><i class="fa fa-photo" aria-hidden="true"></i></a>
+                      </div>
+                      <div class="steps-step-2">
+                          <a href="#step-4" type="button" class="btn btn-blue-grey btn-circle-2 waves-effect mr-0" data-toggle="tooltip" data-placement="top" title="Završetak registracije"><i class="fa fa-check" aria-hidden="true"></i></a>
+                      </div>
+                  </div>
+              </div>
+
+
+          <div class="container px-4">
+              @yield('auth.forms.first_step')
+
+
+          </div>
+
+
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+@endsection
+
+
+<!--     <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -87,5 +140,4 @@
             </div>
         </div>
     </div>
-</div>
-@endsection
+</div> -->

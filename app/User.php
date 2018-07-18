@@ -65,7 +65,7 @@ class User extends Authenticatable
     }
 
     public function kategorije(){
-      return $this->belongsToMany('App\Kategorije');
+      return $this->belongsToMany('App\Kategorije')->withPivot('iskustvo');
     }
 
     public function photo(){
@@ -80,7 +80,11 @@ class User extends Authenticatable
       return $this->hasMany('App\VidGallery');
     }
 
-    public function kat_sport() {
-      return $this->hasOne('App\KatSport');
+    public function inputs(){
+      return $this->belongsToMany('App\Kategorije')->withPivot('value1','value2');
     }
+
+
+
+
 }

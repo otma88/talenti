@@ -8,8 +8,12 @@ class Inputs extends Model
 {
     protected $table = 'inputs';
 
-    protected $fillable = [
-      'name'
-    ];
+    public function odgovori() {
+      $this->hasMany('App\Odgovori');
+    }
+
+    public function users() {
+      $this->belongsToMany('App\User');
+    }
 
 }

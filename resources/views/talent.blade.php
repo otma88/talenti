@@ -15,7 +15,7 @@
 <section id="talent-hedader" class="py-3 bg-primary">
   <div class="container">
     <div class="profile-photo">
-      <img src="{{$talent->photo ? $talent->photo->path : 'http://placehold.it/400x400'}}" alt="" height="382" width="302">
+      <img src="{{$talent->photo ? $talent->profile_pic : 'http://placehold.it/400x400'}}" alt="" height="382" width="302">
     </div>
   </div>
 
@@ -89,11 +89,16 @@
               <br>
               <p class="text-white">PANEL {{$podkategorija->name}}</p>
                @if ($podkategorija->id == 11)
-                @foreach($kat_sport as $sport_item)
-                  <p class="text-white">{{ $sport_item->iskustvo }}</p>
-                  <p class="text-white">Pozicija</p>
-                  <p class="text-white">{{ dd($sport_item->poz_nog_id) }}</p>
-                @endforeach
+                  <p class="text-white">{{ $podkategorija->pivot->iskustvo }}</p>
+                  @php
+                    $pitanje = DB::table('pitanja')->where('id', 1)->get();
+                  @endphp
+                  @foreach($pitanje as $pitanja)
+                  <p class="text-white">{{ $pitanja->pitanje }}</p>
+                  @endforeach
+                  @foreach($inputs as $input)
+                  <p class="text-white">{{ $input->pivot->value1 }}</p>
+                  @endforeach
                @endif
           </div>
           <!--/.Panel 2-->
