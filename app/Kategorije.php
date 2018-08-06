@@ -12,6 +12,8 @@ class Kategorije extends Model
     return $this->belongsToMany('App\User');
   }
 
-
+  public function inputs(){
+    return $this->belongsToMany('App\Inputs');
+  }
 
 }

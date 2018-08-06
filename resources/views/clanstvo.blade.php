@@ -118,16 +118,16 @@
     <h3 class="text-white">Da bi postali TOP članovi vodite se sljedećim kriterijima:</h3>
   <div class="row py-2">
       <div class="col-md-1">
-        <img src="{{ asset('mdb/images/li-icon.png')}}" class="float-right"alt="">
+        <img src="{{ asset('mdbo/images/li-icon.png')}}" class="float-right"alt="">
       </div>
       <div class="col-md-9">
         <h4 class="text-white">Profilna slika</h4>
         <h5 class="text-white pl-2">- Portret - ako je talent jedna osoba i predstavlja samog sebe</h5>
         <h5 class="text-white pl-2">- Logo banda, skupine ili branda - ukoliko je talent skupina ljudi koji djeluju kao skupni talent</h5>
-        <img src="{{ asset('mdb/images/talent-1.png')}}" class="ml-2 py-2" alt="">
-        <img src="{{ asset('mdb/images/talent-2.png')}}" class="ml-2 py-2" alt="">
-        <img src="{{ asset('mdb/images/talent-3.png')}}" class="ml-2 py-2" alt="">
-        <img src="{{ asset('mdb/images/talent-4.png')}}" class="ml-2 py-2" alt="">
+        <img src="{{ asset('mdbo/images/talent-1.png')}}" class="ml-2 py-2" alt="">
+        <img src="{{ asset('mdbo/images/talent-2.png')}}" class="ml-2 py-2" alt="">
+        <img src="{{ asset('mdbo/images/talent-3.png')}}" class="ml-2 py-2" alt="">
+        <img src="{{ asset('mdbo/images/talent-4.png')}}" class="ml-2 py-2" alt="">
       </div>
   </div>
 
@@ -138,14 +138,14 @@
       <div class="col-md-9">
         <h4 class="text-white">Galerija slika i videa</h4>
         <h5 class="text-white pl-2">- Priložiti kvalitetan foto i video sadržaj po mogućnosti u HD rezoluciji</h5>
-        <img src="{{ asset('mdb/images/gal-photo-1.png')}}" class="ml-2 py-2" alt="">
-        <img src="{{ asset('mdb/images/gal-photo-2.png')}}" class="ml-2 py-2" alt="">
-        <img src="{{ asset('mdb/images/gal-photo-3.png')}}" class="ml-2 py-2" alt="">
-        <img src="{{ asset('mdb/images/gal-photo-4.png')}}" class="ml-2 py-2" alt=""><br>
-        <img src="{{ asset('mdb/images/gal-photo-5.png')}}" class="ml-2 py-2" alt="">
-        <img src="{{ asset('mdb/images/gal-photo-6.png')}}" class="ml-2 py-2" alt="">
-        <img src="{{ asset('mdb/images/gal-photo-7.png')}}" class="ml-2 py-2" alt="">
-        <img src="{{ asset('mdb/images/gal-photo-8.png')}}" class="ml-2 py-2" alt="">
+        <img src="{{ asset('mdbo/images/gal-photo-1.png')}}" class="ml-2 py-2" alt="">
+        <img src="{{ asset('mdbo/images/gal-photo-2.png')}}" class="ml-2 py-2" alt="">
+        <img src="{{ asset('mdbo/images/gal-photo-3.png')}}" class="ml-2 py-2" alt="">
+        <img src="{{ asset('mdbo/images/gal-photo-4.png')}}" class="ml-2 py-2" alt=""><br>
+        <img src="{{ asset('mdbo/images/gal-photo-5.png')}}" class="ml-2 py-2" alt="">
+        <img src="{{ asset('mdbo/images/gal-photo-6.png')}}" class="ml-2 py-2" alt="">
+        <img src="{{ asset('mdbo/images/gal-photo-7.png')}}" class="ml-2 py-2" alt="">
+        <img src="{{ asset('mdbo/images/gal-photo-8.png')}}" class="ml-2 py-2" alt="">
 
       </div>
   </div>

@@ -9,12 +9,8 @@
     <title>Tvornica talenata</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap core CSS -->
-    <link href="{{asset('mdb/css/bootstrap.min.css')}}" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="{{asset('mdb/css/mdb.min.css')}}" rel="stylesheet">
-    <!-- Your custom styles (optional) -->
-    <link href="{{asset('mdb/css/style.css')}}" rel="stylesheet">
+    <!-- CSS -->
+    <link href="{{asset('css/app.css')}}" rel="stylesheet">
   </head>
 <body>
     <div id="app">
@@ -23,7 +19,7 @@
         <div class="container">
           <!-- Navbar brand -->
           <a class="navbar-brand" href="{{ url('/') }}">
-            <img src="{{ asset('mdb/images/logo.png')}}" alt="">
+            <img src="{{ asset('mdbo/images/logo.png')}}" alt="">
           </a>
 
           <!-- Collapse button -->
@@ -48,7 +44,7 @@
                       <a class="nav-link" href="{{ route('novosti') }}"><strong>Novosti</strong></a>
                   </li>
                   <li class="nav-item mr-3 pt-1">
-                      <img src="{{ asset('mdb/images/Line.png')}}" alt="">
+                      <img src="{{ asset('mdbo/images/Line.png')}}" alt="">
                   </li>
                   <!-- Buttons -->
                   @guest
@@ -56,7 +52,7 @@
                       <a href="{{ route('login') }}"><button class="btn btn-primary btn-sm"><i class="fa fa-sign-in mr-1"></i>Prijava</button></a>
                     </li>
                     <li>
-                      <button class="btn btn-primary btn-sm"><i class="fa fa-user mr-1"></i>Registracija</button>
+                      <a href="{{ route('register') }}"><button class="btn btn-primary btn-sm"><i class="fa fa-user mr-1"></i>Registracija</button></a>
                     </li>
                   @else
                   <li class="nav-item dropdown">
@@ -87,7 +83,7 @@
 
     </div>
         <main>
-          
+
 
             @yield('content')
 
@@ -96,116 +92,171 @@
         </main>
 
 
-        <!--Footer-->
-      <footer class="page-footer center-on-small-only mt-0 bg-secondary">
+        <!-- Footer -->
+  <footer class="page-footer font-small bg-primary pt-4">
 
-          <!--Footer Links-->
-          <div class="container">
-              <div class="row">
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left">
 
-                  <!--First column-->
-                  <div class="col-md-4">
-                      <h5 class="title mb-4 mt-3 font-bold">Naša Misija</h5>
-                      <p>Misija je svim našim talentima osigurati najbolju uslugu promocije kako bi njihov talent došao do onih koji traže izvrsnost baš u njihovom području, a poslodavcima dostupnost i visokokvalitetan prikaz talenata i njihovih vještina kako bi oni postali dio njihovog poslovnog okruženja.</p>
-                  </div>
-                  <!--/.First column-->
+        <!-- Grid row -->
+        <div class="row">
 
-                  <hr class="clearfix w-100 d-md-none">
+          <!-- Grid column -->
+          <div class="col-md-4 mx-auto">
 
-                  <!--Second column-->
-                  <div class="col-md-2 mx-auto">
-                      <h5 class="title mb-4 mt-3 font-bold">O nama</h5>
-                      <ul>
-                          <li><a href="#!">Tko smo?</a></li>
-                          <li><a href="#!">Naša vizija</a></li>
-                          <li><a href="#!">Link 3</a></li>
-                          <li><a href="#!">Link 4</a></li>
-                      </ul>
-                  </div>
-                  <!--/.Second column-->
+            <!-- Content -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Footer Content</h5>
+            <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit.</p>
 
-                  <hr class="clearfix w-100 d-md-none">
-
-                  <!--Third column-->
-                  <div class="col-md-2 mx-auto">
-                      <h5 class="title mb-4 mt-3 font-bold">Savjeti i pomoć</h5>
-                      <ul>
-                          <li><a href="#!">Kako koristiti portal?</a></li>
-                          <li><a href="#!">Talenti</a></li>
-                          <li><a href="#!">Poslodavci</a></li>
-                          <li><a href="#!">Članstvo</a></li>
-                      </ul>
-                  </div>
-                  <!--/.Third column-->
-
-                  <hr class="clearfix w-100 d-md-none">
-
-                  <!--Fourth column-->
-                  <div class="col-md-2 mx-auto">
-                      <h5 class="title mb-4 mt-3 font-bold ">Uvjeti korištenja</h5>
-                      <ul>
-                          <li><a href="#!">Uvjeti</a></li>
-                          <li><a href="#!">Polica privatnosti</a></li>
-                          <li><a href="#!">Link 3</a></li>
-                          <li><a href="#!">Link 4</a></li>
-                      </ul>
-                  </div>
-                  <!--/.Fourth column-->
-              </div>
           </div>
-          <!--/.Footer Links-->
+          <!-- Grid column -->
 
-          <hr>
+          <hr class="clearfix w-100 d-md-none">
 
-          <!--Call to action-->
-          <div class="call-to-action">
-              <ul>
-                  <li>
-                      <h5 class="mb-1">Registriraj se!</h5>
-                  </li>
-                  <li><a href="" class="btn btn-danger btn-rounded">Registracija</a></li>
-              </ul>
+          <!-- Grid column -->
+          <div class="col-md-2 mx-auto">
+
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Link 1</a>
+              </li>
+              <li>
+                <a href="#!">Link 2</a>
+              </li>
+              <li>
+                <a href="#!">Link 3</a>
+              </li>
+              <li>
+                <a href="#!">Link 4</a>
+              </li>
+            </ul>
+
           </div>
-          <!--/.Call to action-->
+          <!-- Grid column -->
 
-          <hr>
+          <hr class="clearfix w-100 d-md-none">
 
-          <!--Social buttons-->
-          <div class="social-section text-center">
-              <ul>
+          <!-- Grid column -->
+          <div class="col-md-2 mx-auto">
 
-                  <li><a class="btn-floating btn-sm btn-fb"><i class="fa fa-facebook"> </i></a></li>
-                  <li><a class="btn-floating btn-sm btn-tw"><i class="fa fa-twitter"> </i></a></li>
-                  <li><a class="btn-floating btn-sm btn-gplus"><i class="fa fa-google-plus"> </i></a></li>
-                  <li><a class="btn-floating btn-sm btn-li"><i class="fa fa-linkedin"> </i></a></li>
-                  <li><a class="btn-floating btn-sm btn-dribbble"><i class="fa fa-dribbble"> </i></a></li>
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
 
-              </ul>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Link 1</a>
+              </li>
+              <li>
+                <a href="#!">Link 2</a>
+              </li>
+              <li>
+                <a href="#!">Link 3</a>
+              </li>
+              <li>
+                <a href="#!">Link 4</a>
+              </li>
+            </ul>
+
           </div>
-          <!--/.Social buttons-->
+          <!-- Grid column -->
 
-          <!--Copyright-->
-          <div class="footer-copyright">
-              <div class="container-fluid">
-                  © 2017 Sva prava pridržana: <a href="https://www.MDBootstrap.com"> tvornica-talenata.com </a>
+          <hr class="clearfix w-100 d-md-none">
 
-              </div>
+          <!-- Grid column -->
+          <div class="col-md-2 mx-auto">
+
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Link 1</a>
+              </li>
+              <li>
+                <a href="#!">Link 2</a>
+              </li>
+              <li>
+                <a href="#!">Link 3</a>
+              </li>
+              <li>
+                <a href="#!">Link 4</a>
+              </li>
+            </ul>
+
           </div>
-          <!--/.Copyright-->
+          <!-- Grid column -->
 
-      </footer>
-      <!--/.Footer-->
+        </div>
+        <!-- Grid row -->
+
+      </div>
+      <!-- Footer Links -->
+
+      <hr>
+
+      <!-- Call to action -->
+      <ul class="list-unstyled list-inline text-center py-2">
+        <li class="list-inline-item">
+          <h5 class="mb-1">Register for free</h5>
+        </li>
+        <li class="list-inline-item">
+          <a href="#!" class="btn btn-danger btn-rounded">Sign up!</a>
+        </li>
+      </ul>
+      <!-- Call to action -->
+
+      <hr>
+
+      <!-- Social buttons -->
+      <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+          <a class="btn-floating btn-fb mx-1">
+            <i class="fa fa-facebook"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-tw mx-1">
+            <i class="fa fa-twitter"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-gplus mx-1">
+            <i class="fa fa-google-plus"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-li mx-1">
+            <i class="fa fa-linkedin"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-dribbble mx-1">
+            <i class="fa fa-dribbble"> </i>
+          </a>
+        </li>
+      </ul>
+      <!-- Social buttons -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2018 Copyright:
+        <a href="https://mdbootstrap.com/bootstrap-tutorial/"> MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
 
 
   <!--Main Layout-->
   <!-- SCRIPTS -->
-  <!-- JQuery -->
-  <script type="text/javascript" src="{{asset('mdb/js/jquery-3.2.1.min.js')}}"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="{{asset('mdb/js/popper.min.js')}}"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="{{asset('mdb/js/bootstrap.min.js')}}"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="{{asset('mdb/js/mdb.min.js')}}"></script>
+  <!-- MDB -->
+  <script type="text/javascript" src="{{asset('mdbo/js/jquery-3.3.1.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('mdbo/js/popper.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('mdbo/js/bootstrap.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('mdbo/js/mdb.js')}}"></script>
 </body>
 </html>

@@ -27,7 +27,7 @@ class TalentiController extends Controller
      */
     public function create()
     {
-        //
+        return view('register');
     }
 
     /**
@@ -38,7 +38,26 @@ class TalentiController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $this->validate(request(),[
+            'name' => 'required',
+            'surname' => 'required',
+            'spol' => 'required'
+
+        ]);
+
+        $talent = new User();
+        $talent->name=$request['name'];
+        $talent->surname=$request['prezime'];
+        $talent->spol=$request['spol'];
+        $talent->$request->input('role_id','1');
+        $talent->email=$request['email'];
+        $talent->password=$request['password'];
+
+        $talent -> save();
+
+        return redirect()->route('home');
+
     }
 
     /**
@@ -55,7 +74,7 @@ class TalentiController extends Controller
 
         $podkategorije = $talent->kategorije()->where('parent_id','!=',0)->orderBy("id")->get();
 
-        $inputs = $talent->users()->get();
+      //  $inputs = $podkategorije->inputs()->get();
 
         $images = $talent->img_gallery()->get();
 

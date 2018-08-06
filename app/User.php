@@ -36,7 +36,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'surname', 'email', 'password','role_id',
+        'name', 'surname', 'email', 'password','role_id', 'spol'
     ];
 
     /**
@@ -81,7 +81,7 @@ class User extends Authenticatable
     }
 
     public function inputs(){
-      return $this->belongsToMany('App\Kategorije')->withPivot('value1','value2');
+      return $this->belongsToMany('App\Inputs')->withPivot('value1','value2');
     }
 
 

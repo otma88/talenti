@@ -12,8 +12,8 @@ class Inputs extends Model
       $this->hasMany('App\Odgovori');
     }
 
-    public function users() {
-      $this->belongsToMany('App\User');
+    public function kategorije(){
+      return $this->belongsToMany('App\Kategorije')->withPivot("value1","value2");
     }
 
 }

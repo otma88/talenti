@@ -96,9 +96,7 @@
                   @foreach($pitanje as $pitanja)
                   <p class="text-white">{{ $pitanja->pitanje }}</p>
                   @endforeach
-                  @foreach($inputs as $input)
-                  <p class="text-white">{{ $input->pivot->value1 }}</p>
-                  @endforeach
+                  <p class="text-white">Napadač</p>
                @endif
           </div>
           <!--/.Panel 2-->
