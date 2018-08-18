@@ -24,7 +24,7 @@ Route::get('/clanstvo', 'ClanstvoController@index')->name('clanstvo');
 Route::get('/novosti', 'NovostiController@index')->name('novosti');
 Route::get('/audicije-i-poslovi', 'PosloviController@index')->name('audicije-i-poslovi');
 Route::get('/talenti/{slug}', 'TalentiController@show')->name('talent');
-//Route::get('/register', 'TalentiController@store')->name('register');
+Route::post('/register', 'TalentiController@store')->name('register');
 
 
 Route::prefix('admin')->group(function() {

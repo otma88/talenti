@@ -35,7 +35,7 @@
                 </div>
 
                 <div class="container px-4">
-                    <form role="form" action="/register" method="post">
+                    <form role="form" action="{{ route('register') }}" method="post">
 
                         <!-- FIRST STEP -->
                         <div class="setup-content-2" id="step-1">

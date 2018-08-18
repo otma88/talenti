@@ -39,7 +39,9 @@ class TalentiController extends Controller
     public function store(Request $request)
     {
 
-        $this->validate(request(),[
+        var_dump($request('name'));
+
+      /*  $this->validate(request(),[
             'name' => 'required',
             'surname' => 'required',
             'spol' => 'required'
@@ -56,7 +58,7 @@ class TalentiController extends Controller
 
         $talent -> save();
 
-        return redirect()->route('home');
+        return redirect()->route('home');*/
 
     }
 
